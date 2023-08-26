@@ -1,6 +1,5 @@
 ﻿using DAL.EF.Models;
 using DAL.Interfaces;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -16,8 +15,8 @@ namespace DAL.Repos
 
         public bool Delete(int id)
         {
-            var exobj = Get(id);
-            db.Buses.Remove(exobj);
+            var ex = Get(id);
+            db.Buses.Remove(ex);
             return db.SaveChanges() > 0;
         }
 
@@ -33,7 +32,9 @@ namespace DAL.Repos
 
         public bool Update(Bus obj)
         {
-            throw new NotImplementedException();
+            var ex = Get(obj.Id);
+            db.Entry(ex).CurrentValues.SetValues(obj);
+            return db.SaveChanges() > 0;
         }
     }
 }

@@ -32,19 +32,24 @@ namespace BLL.Services
             return converted;
         }
 
-        public static VehicleDTO Add(VehicleDTO newVehicle)
+        public static bool Create(VehicleDTO Vehicle)
         {
-            var config = new MapperConfiguration(cfg =>
-            {
-                cfg.CreateMap<VehicleDTO, Vehicle>();
-            });
-            var mapper = new Mapper(config);
-            var vehicleEntity = mapper.Map<Vehicle>(newVehicle);
+            var mapper = MapperService<VehicleDTO, Vehicle>.GetMapper();
+            var mapped = mapper.Map<Vehicle>(Vehicle);
+            return DataAccessFactory.VehicleData().Create(mapped);
+        }
 
-            var createdVehicleEntity = DataAccessFactory.VehicleData().Create(vehicleEntity);
+        public static bool Update(VehicleDTO Comment)
+        {
+            var mapper = MapperService<VehicleDTO, Vehicle>.GetMapper();
+            var mapped = mapper.Map<Vehicle>(Comment);
+            return DataAccessFactory.VehicleData().Update(mapped);
 
-            var createdVehicleDTO = mapper.Map<VehicleDTO>(createdVehicleEntity);
-            return createdVehicleDTO;
+        }
+
+        public static bool Delete(int id)
+        {
+            return DataAccessFactory.VehicleData().Delete(id);
         }
     }
 }

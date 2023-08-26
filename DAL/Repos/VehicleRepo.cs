@@ -16,7 +16,9 @@ namespace DAL.Repos
 
         public bool Delete(int id)
         {
-            throw new NotImplementedException();
+            var ex = Get(id);
+            db.Vehicles.Remove(ex);
+            return db.SaveChanges() > 0;
         }
 
         public List<Vehicle> Get()
@@ -31,7 +33,9 @@ namespace DAL.Repos
 
         public bool Update(Vehicle obj)
         {
-            throw new NotImplementedException();
+            var ex = Get(obj.Id);
+            db.Entry(ex).CurrentValues.SetValues(obj);
+            return db.SaveChanges() > 0;
         }
     }
 }

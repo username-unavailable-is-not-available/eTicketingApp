@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccessFactory.cs" />
     <Compile Include="EF\Models\Bus.cs" />
     <Compile Include="EF\Models\User.cs" />
     <Compile Include="EF\Models\Vehicle.cs" />

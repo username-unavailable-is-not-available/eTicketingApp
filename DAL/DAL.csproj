@@ -62,7 +62,9 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repos\BusRepo.cs" />
     <Compile Include="Repos\Repo.cs" />
+    <Compile Include="Repos\VehicleRepo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -44,7 +44,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTOs\EmployeeManageDTO.cs" />
+    <Compile Include="DTOs\FinanceManageDTO.cs" />
+    <Compile Include="DTOs\RouteManageDTO.cs" />
+    <Compile Include="DTOs\TicketManageDTO.cs" />
+    <Compile Include="DTOs\UserManageDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\EmployeeManageService.cs" />
+    <Compile Include="Services\FinanceManageService.cs" />
+    <Compile Include="Services\MapperService.cs" />
+    <Compile Include="Services\RouteManageService.cs" />
+    <Compile Include="Services\TicketManageService.cs" />
+    <Compile Include="Services\UserManageService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">
@@ -52,10 +63,7 @@
       <Name>DAL</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DTOs\" />
-    <Folder Include="Services\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>

@@ -30,5 +30,9 @@ namespace DAL
         {
             return new TrainRepo();
         }
+        public static IRepo<Airplane, int, bool> AirplaneData()
+        {
+            return new AirplaneRepo();
+        }
     }
 }

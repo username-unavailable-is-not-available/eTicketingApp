@@ -142,6 +142,7 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="AuthFilters\Logged.cs" />
+    <Compile Include="Controllers\AirplaneController.cs" />
     <Compile Include="Controllers\AuthController.cs" />
     <Compile Include="Controllers\BusController.cs" />
     <Compile Include="Controllers\TrainController.cs" />

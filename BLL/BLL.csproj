@@ -44,12 +44,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTOs\AirplaneDTO.cs" />
     <Compile Include="DTOs\BusDTO.cs" />
     <Compile Include="DTOs\TokenDTO.cs" />
     <Compile Include="DTOs\TrainDTO.cs" />
     <Compile Include="DTOs\UserDTO.cs" />
     <Compile Include="DTOs\VehicleDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\AirplaneService.cs" />
     <Compile Include="Services\AuthService.cs" />
     <Compile Include="Services\BusService.cs" />
     <Compile Include="Services\MapperService.cs" />

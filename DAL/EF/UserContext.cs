@@ -10,5 +10,6 @@ namespace DAL.EF
         public DbSet<Vehicle> Vehicles { get; set; }
         public DbSet<Bus> Buses { get; set; }
         public DbSet<Train> Trains { get; set; }
+        public DbSet<Airplane> Airplanes { get; set; }
     }
 }

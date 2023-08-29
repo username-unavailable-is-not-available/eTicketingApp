@@ -144,6 +144,7 @@
     <Compile Include="AuthFilters\Logged.cs" />
     <Compile Include="Controllers\AuthController.cs" />
     <Compile Include="Controllers\BusController.cs" />
+    <Compile Include="Controllers\TrainController.cs" />
     <Compile Include="Controllers\VehicleController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

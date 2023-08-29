@@ -26,5 +26,9 @@ namespace DAL
         {
             return new TokenRepo();
         }
+        public static IRepo<Train, int, bool> TrainData()
+        {
+            return new TrainRepo();
+        }
     }
 }

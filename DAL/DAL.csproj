@@ -54,6 +54,7 @@
     <Compile Include="DataAccessFactory.cs" />
     <Compile Include="EF\Models\Bus.cs" />
     <Compile Include="EF\Models\Token.cs" />
+    <Compile Include="EF\Models\Train.cs" />
     <Compile Include="EF\Models\User.cs" />
     <Compile Include="EF\Models\Vehicle.cs" />
     <Compile Include="EF\UserContext.cs" />
@@ -71,11 +72,16 @@
     <Compile Include="Migrations\202308290034150_userAuthentication.designer.cs">
       <DependentUpon>202308290034150_userAuthentication.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202308290102424_addedTrainEntity.cs" />
+    <Compile Include="Migrations\202308290102424_addedTrainEntity.designer.cs">
+      <DependentUpon>202308290102424_addedTrainEntity.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repos\BusRepo.cs" />
     <Compile Include="Repos\Repo.cs" />
     <Compile Include="Repos\TokenRepo.cs" />
+    <Compile Include="Repos\TrainRepo.cs" />
     <Compile Include="Repos\UserRepo.cs" />
     <Compile Include="Repos\VehicleRepo.cs" />
   </ItemGroup>
@@ -92,6 +98,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202308290034150_userAuthentication.resx">
       <DependentUpon>202308290034150_userAuthentication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308290102424_addedTrainEntity.resx">
+      <DependentUpon>202308290102424_addedTrainEntity.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -14,5 +14,17 @@ namespace DAL
         {
             return new BusRepo();
         }
+        public static IRepo<User, string, bool> UserData()
+        {
+            return new UserRepo();
+        }
+        public static IAuth AuthData()
+        {
+            return new UserRepo();
+        }
+        public static IRepo<Token, int, Token> TokensData()
+        {
+            return new TokenRepo();
+        }
     }
 }

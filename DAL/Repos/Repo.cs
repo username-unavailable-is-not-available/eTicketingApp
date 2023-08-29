@@ -9,5 +9,10 @@ namespace DAL.Repos
         {
             db = new UserContext();
         }
+        protected AdminContext db;
+        protected Repo()
+        {
+            db = new AdminContext();
+        }
     }
 }

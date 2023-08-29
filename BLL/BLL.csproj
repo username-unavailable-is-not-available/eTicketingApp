@@ -50,6 +50,11 @@
     <Compile Include="DTOs\TrainDTO.cs" />
     <Compile Include="DTOs\UserDTO.cs" />
     <Compile Include="DTOs\VehicleDTO.cs" />
+    <Compile Include="DTOs\EmployeeManageDTO.cs" />
+    <Compile Include="DTOs\FinanceManageDTO.cs" />
+    <Compile Include="DTOs\RouteManageDTO.cs" />
+    <Compile Include="DTOs\TicketManageDTO.cs" />
+    <Compile Include="DTOs\UserManageDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\AirplaneService.cs" />
     <Compile Include="Services\AuthService.cs" />
@@ -58,6 +63,12 @@
     <Compile Include="Services\TrainService.cs" />
     <Compile Include="Services\UserService.cs" />
     <Compile Include="Services\VehicleService.cs" />
+    <Compile Include="Services\EmployeeManageService.cs" />
+    <Compile Include="Services\FinanceManageService.cs" />
+    <Compile Include="Services\MapperService.cs" />
+    <Compile Include="Services\RouteManageService.cs" />
+    <Compile Include="Services\TicketManageService.cs" />
+    <Compile Include="Services\UserManageService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">

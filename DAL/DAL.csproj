@@ -60,6 +60,13 @@
     <Compile Include="EF\Models\Vehicle.cs" />
     <Compile Include="EF\UserContext.cs" />
     <Compile Include="Interfaces\IAuth.cs" />
+    <Compile Include="DataAccessFactory.cs" />
+    <Compile Include="EF\AdminContext.cs" />
+    <Compile Include="EF\Models\EmployeeManage.cs" />
+    <Compile Include="EF\Models\FinanceManage.cs" />
+    <Compile Include="EF\Models\RouteManage.cs" />
+    <Compile Include="EF\Models\TicketManage.cs" />
+    <Compile Include="EF\Models\UserManage.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
     <Compile Include="Migrations\202308261024113_initDB.cs" />
     <Compile Include="Migrations\202308261024113_initDB.designer.cs">
@@ -82,14 +89,32 @@
       <DependentUpon>202308290123113_addedAirplaneEntity.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Migrations\202308261823577_initDB-Admin.cs" />
+    <Compile Include="Migrations\202308261823577_initDB-Admin.designer.cs">
+      <DependentUpon>202308261823577_initDB-Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308262303297_initEmployeeAndFinance.cs" />
+    <Compile Include="Migrations\202308262303297_initEmployeeAndFinance.designer.cs">
+      <DependentUpon>202308262303297_initEmployeeAndFinance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308270905258_addedRouteManage.cs" />
+    <Compile Include="Migrations\202308270905258_addedRouteManage.designer.cs">
+      <DependentUpon>202308270905258_addedRouteManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repos\AirplaneRepo.cs" />
     <Compile Include="Repos\BusRepo.cs" />
+    <Compile Include="Repos\EmployeeManageRepo.cs" />
+    <Compile Include="Repos\FinanceManageRepo.cs" />
     <Compile Include="Repos\Repo.cs" />
     <Compile Include="Repos\TokenRepo.cs" />
     <Compile Include="Repos\TrainRepo.cs" />
     <Compile Include="Repos\UserRepo.cs" />
     <Compile Include="Repos\VehicleRepo.cs" />
+    <Compile Include="Repos\RouteManageRepo.cs" />
+    <Compile Include="Repos\TicketManageRepo.cs" />
+    <Compile Include="Repos\UserManageRepo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -110,6 +135,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202308290123113_addedAirplaneEntity.resx">
       <DependentUpon>202308290123113_addedAirplaneEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308261823577_initDB-Admin.resx">
+      <DependentUpon>202308261823577_initDB-Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308262303297_initEmployeeAndFinance.resx">
+      <DependentUpon>202308262303297_initEmployeeAndFinance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308270905258_addedRouteManage.resx">
+      <DependentUpon>202308270905258_addedRouteManage.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

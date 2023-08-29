@@ -147,6 +147,11 @@
     <Compile Include="Controllers\BusController.cs" />
     <Compile Include="Controllers\TrainController.cs" />
     <Compile Include="Controllers\VehicleController.cs" />
+    <Compile Include="Controllers\EmployeeManageController.cs" />
+    <Compile Include="Controllers\FinanceManageController.cs" />
+    <Compile Include="Controllers\RouteManageController.cs" />
+    <Compile Include="Controllers\TicketManageController.cs" />
+    <Compile Include="Controllers\UserManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -164,6 +169,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">
